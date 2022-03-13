@@ -1,0 +1,54 @@
+body {
+    /* margin: auto;
+    align-content: center;
+    border-radius: auto;
+    scroll-padding-top: auto; */
+    margin: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#skills-list {
+    margin-top: 0;
+    display: felx;
+    justify-content: center;
+    padding: 25px;
+    border: 15px solid;
+    border-width: 5px;
+    border-color: rgba(155,155, 75, 1);
+    flex-flow: nowrap;
+}
+
+li {
+    padding: 15px;
+}
+#skills-display{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 40%;
+    list-style: none;
+    padding: 0px;
+    row-gap: 15px;
+}
+
+form {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#dev-skills {
+    color: green;
+    justify-content: center;
+
+}
+.bullet{
+    width: 1px;
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: red;
+    margin: 6px;
+    color: white;
+    font-weight: bold;
+}

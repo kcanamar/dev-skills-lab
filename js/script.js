@@ -21,6 +21,7 @@ function saveLs() {
 function loadLs() {
     // this will retrieve the (key, value) from the object localStorage
     let retrieved = localStorage.getItem("skills");
+    // this will take the retrieved data and create a 
     skills = JSON.parse(retrieved)
     if (skills === null){
         skills = []
@@ -35,6 +36,7 @@ function renderLs(){
 }
 
 function renderUl(){
+    // moved the $ul creation into a function
     $submit.on("click", (event) => {
         // prevents default form behavior
         // console.log("you clicked")

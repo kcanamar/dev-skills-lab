@@ -6,22 +6,25 @@ body {
     margin: 15%;
     display: flex;
     justify-content: center;
+    background-color: rgb(92, 143, 71)
 }
 
 #skills-list {
     margin-top: 0;
-    display: felx;
     justify-content: center;
     padding: 25px;
     border: 15px solid;
     border-width: 5px;
     border-color: rgba(155,155, 75, 1);
     flex-flow: nowrap;
+    background-color:rgb(200, 223, 247)
 }
 
 li {
     padding: 15px;
+    /* need to solve the text wrapping issue */
 }
+
 #skills-display{
     display: flex;
     flex-flow: column nowrap;
@@ -40,14 +43,34 @@ form {
 #dev-skills {
     color: green;
     justify-content: center;
-
+    padding-top: 0px;
+    margin-top: 0px;
+    
 }
+
+form{
+    justify-content: center;
+    gap: 40px;
+}
+input {
+    border-radius: 10%;
+    border-color: rgb(58, 58, 27);
+    background-color: rgb(60, 109, 99);
+    color:rgb(200, 223, 247)
+}
+
+.title{
+    font-size: 30px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 .bullet{
     width: 1px;
     display: inline;
     margin-right: 10px;
     padding: 10px;
-    background-color: red;
+    background-color: rgba(188,142,22,1);
     margin: 6px;
     color: white;
     font-weight: bold;

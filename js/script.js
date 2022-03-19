@@ -7,9 +7,24 @@ const $ul = $("#skills-display")
 
 let skills = []
 
-// loadLs();
+loadLs();
 renderLs();
 renderUl();
+
+const $test = $("#test") //test button
+const $test2 = $("#test2") //test2
+const $test3 = $("#test3")
+
+$test.on("click", (event) => {
+    localStorage.clear()
+    console.log(localStorage)
+})
+$test2.on("click", (event) => {
+    console.log(localStorage)
+})
+$test3.on("click", (event) => {
+    console.log(skills)
+})
 
 function saveLs() {
     // this will convert our array into a string
@@ -23,46 +38,55 @@ function loadLs() {
     let retrieved = localStorage.getItem("skills");
     // this will take the retrieved data and create a 
     skills = JSON.parse(retrieved)
-    if (skills === null){
+    if (skills === null) {
         skills = []
-    } 
+    }
 }
 
-function renderLs(){
+function renderLs() {
     // this will render the information stored 
     skills.forEach(skill => {
-        renderUl()
+        // renderUl()
+        const $li = $("<li>")
+        $li.html(`<div class="bullet">x</div>${skill}`)
+        $ul.append($li)
+        $li.on("click", addRemovalClickListener)
     })
 }
 
-function renderUl(){
+
+function renderUl() {
     // moved the $ul creation into a function
     $submit.on("click", (event) => {
         // prevents default form behavior
-        // console.log("you clicked")
         event.preventDefault()
+
         // get the value from the input
-        // textInput.value
         const newSkill = $textInput.val()
-        // add to list of todos
+
+        // add to array
         skills.push(newSkill)
-        // console.log("i got your skill")
-        // add an li with the new todo
+
+        //populates the ul with the li
         const $li = $("<li>")
         $li.html(`<div class="bullet">x</div>${newSkill}`)
         $ul.append($li)
-        // add to localStorage 
-        saveLs($ul)
-        // add removal event listener
-        const remove = (event) => {
-            // turn the event target to a jQ object
-            const $target = $(event.target)
-            // remove it
-            $target.remove()
-            // console.log("remove success")
-        }
-        $li.on("click", remove)
+
+        //mirror array to localstorage
+        saveLs()
+
+        //add li listener
+        $li.on("click", addRemovalClickListener)
+
         // clear the input
         $textInput.val("")
-    })   
+    })
+}
+
+function addRemovalClickListener(event) {
+    const $target = $(event.target)
+    let indexNumber = Array.prototype.indexOf.call(this.parentElement.children, this) //gets index of click target relative to siblings
+    skills.splice(indexNumber, 1) //cuts it out of the array
+    $target.remove() //removes clicked target
+    saveLs() // mirrors array contents to localstorage
 }

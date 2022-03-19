@@ -1,77 +1,82 @@
-body {
-    /* margin: auto;
-    align-content: center;
-    border-radius: auto;
-    scroll-padding-top: auto; */
-    margin: 15%;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(92, 143, 71)
-}
-
-#skills-list {
-    margin-top: 0;
-    justify-content: center;
-    padding: 25px;
-    border: 15px solid;
-    border-width: 5px;
-    border-color: rgba(155,155, 75, 1);
-    flex-flow: nowrap;
-    background-color:rgb(200, 223, 247)
-}
-
-li {
-    padding: 15px;
-    /* need to solve the text wrapping issue */
-}
-
-#skills-display{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 40%;
-    list-style: none;
-    padding: 0px;
-    row-gap: 15px;
-}
-
-form {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-#dev-skills {
-    color: green;
-    justify-content: center;
-    padding-top: 0px;
-    margin-top: 0px;
+* {
+    box-sizing: border-box;
     
 }
 
-form{
+:root {
+    --funny-green: mediumseagreen;
+  }
+
+h1 {
+    background-color:var(--funny-green);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: .4em;
+    margin: 0;
+}
+
+#list {
+    padding-left: 0em;
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    padding: .0em;
+    /* background-color: lightgrey; */
+    font-family: Arial;
+    color: goldenrod;
+    padding: .8em 0 .8em 0
+}
+
+body {
     justify-content: center;
-    gap: 40px;
-}
-input {
-    border-radius: 10%;
-    border-color: rgb(58, 58, 27);
-    background-color: rgb(60, 109, 99);
-    color:rgb(200, 223, 247)
+    display:flex;
+    /* align-items:center; */
+    /* flex-flow: column nowrap; */
+    height: 100vh;
+    width: 100vw;
 }
 
-.title{
-    font-size: 30px;
-    padding-top: 0px;
-    margin-top: 0px;
+
+
+#master {
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    width:40%;
 }
 
-.bullet{
-    width: 1px;
+form {
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+.bullet {
     display: inline;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: rgba(188,142,22,1);
-    margin: 6px;
+    margin-right:1em;
+    padding:.4em;
+    background-color: red;
+    margin: 1;
     color: white;
     font-weight: bold;
+}
+
+#input-box {
+    width: 70%;
+}
+#submit {
+    width: 30%;
+    background-color: white;
+    margin-left: .5em;
+}
+
+.inputs {
+    border: solid .2em;
+    border-color: var(--funny-green);
+    height: 3em;
+    margin:0;
 }

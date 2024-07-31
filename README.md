@@ -36,7 +36,8 @@ dev-skills-lab/
 	- Link in `./js/script.js` - don't forget the `defer` attribute!
 	- Link in `./css/script.css`
 
-3. You'll want to create a repo for this assignment on [Github Enterprise](https://git.generalassemb.ly)
+3. You'll want to create a repo for this assignment on [Github Enterprise](https://git.generalassemb.ly) or on your [Github](https://github.com)
+
 
 
 4. Code away!

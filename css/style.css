@@ -4,7 +4,7 @@
 }
 
 :root {
-    --funny-green: mediumseagreen;
+    --funny-green: rgb(89, 215, 146);
   }
 
 h1 {
@@ -18,7 +18,14 @@ h1 {
     margin: 0;
 }
 
-#list {
+#skills-list {
+    margin: auto;
+    width: 50rem;
+    border: 2px solid gray;
+    padding: 10rem 14rem;
+}
+
+#skills-display {
     padding-left: 0em;
     list-style-type: none;
     margin: 0;
@@ -29,6 +36,7 @@ li {
     /* background-color: lightgrey; */
     font-family: Arial;
     color: goldenrod;
+    opacity: .75;
     padding: .8em 0 .8em 0
 }
 
@@ -60,23 +68,30 @@ form {
     margin-right:1em;
     padding:.4em;
     background-color: red;
+    opacity: .55;
     margin: 1;
     color: white;
     font-weight: bold;
 }
 
-#input-box {
-    width: 70%;
-}
-#submit {
-    width: 30%;
+.accept {
+    padding: 0.25rem;
     background-color: white;
     margin-left: .5em;
+    border: solid .25em var(--funny-green); 
+    color: var(--funny-green);
 }
 
-.inputs {
-    border: solid .2em;
-    border-color: var(--funny-green);
-    height: 3em;
+.user {
+    width: 100%;
+    border: solid .25em var(--funny-green);
+    height: 2rem;
     margin:0;
+}
+
+.local {
+    padding: 2rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
 }

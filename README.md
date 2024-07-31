@@ -1,12 +1,3 @@
-# dev-skills-lab
----
-track: "Frontend Fundamentals"
-title: "My Developer Skills Lab"
-week: 3
-day: 3
-type: "lab"
----
-
 # My Developer Skills Lab
 
 
@@ -16,7 +7,7 @@ type: "lab"
 
 ## Introduction
 
-This lab provides an opportunity to practice working with jQuery.
+This lab provides an opportunity to practice working with the DOM.
 
 This lab is **BONUS**.
 
@@ -27,7 +18,7 @@ This lab is **BONUS**.
 
 ### Setup  
 
-1. Create a folder called `dev-skills-lab` on github.com.
+1. Create a folder called `dev-skills-lab` 
 - Inside of `dev-skills-lab` create the following folder/file structure:
 
 ```shell
@@ -45,20 +36,10 @@ dev-skills-lab/
 	- Link in `./js/script.js` - don't forget the `defer` attribute!
 	- Link in `./css/script.css`
 
-3. Load jQuery from the CDN by adding the following **before** your `script.js`:
-	
-	```html
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
-	```
+3. You'll want to create a repo for this assignment on [Github Enterprise](https://git.generalassemb.ly)
 
-4. You'll want to create a repo for this assignment on [Github Enterprise](https://git.generalassemb.ly)
 
-5. You'll turn in a link to your repo using the homework submission form to submit this assignment for evaluation
-
-6. Code away!
+4. Code away!
 
 <br>
 <br>
@@ -68,7 +49,7 @@ dev-skills-lab/
 
 ### Requirements
 
-1. Add HTML and CSS as necessary to implement an application that looks close to this wireframe:
+1. Add HTML and CSS as necessary to implement an application that looks close to this wire frame:
 
 	<img src="https://i.imgur.com/k06ZMEN.png">
 	

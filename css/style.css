@@ -9,8 +9,8 @@
 body {
     border: 2px solid gray;
     margin: .4rem;
-    height: 100svh;
     display: flex;
+    padding: 5rem 0;
 }
 
 h1 {
@@ -52,4 +52,28 @@ form {
     width: 5.5rem;
     color: var(--funny-green);
     border: .2em solid var(--funny-green)
+}
+
+.skills-list {
+    margin: auto;
+    padding: .5rem;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    opacity: .75;
+    padding: .8em 0 .8em 0;
+    color: rgb(255, 154, 4);
+    align-items: center;
+}
+
+.bullet {
+    display: inline;
+    margin-right: 1em;
+    padding: .4em;
+    background-color: red;
+    color: white;
+    opacity: .75;
+
 }
